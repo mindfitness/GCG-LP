@@ -31,13 +31,53 @@
             border-radius: 0.5rem;
             min-height: 200px;
         }
+        
+        /* スマホ表示の最適化 */
+        @media (max-width: 767px) {
+            body {
+                font-size: 15px;
+                line-height: 1.6;
+            }
+            h1 {
+                font-size: 1.75rem !important;
+                line-height: 1.3;
+            }
+            h2 {
+                font-size: 1.5rem !important;
+                line-height: 1.3;
+            }
+            h3 {
+                font-size: 1.25rem !important;
+            }
+            h4 {
+                font-size: 1.125rem !important;
+            }
+            .text-4xl {
+                font-size: 2rem !important;
+            }
+            .text-3xl {
+                font-size: 1.75rem !important;
+            }
+            .text-2xl {
+                font-size: 1.5rem !important;
+            }
+            .text-xl {
+                font-size: 1.125rem !important;
+            }
+            .text-lg {
+                font-size: 1rem !important;
+            }
+            p {
+                font-size: 0.9375rem;
+            }
+        }
     </style>
 </head>
 <body class="bg-orange-50 text-gray-800 font-sans">
 
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-            <div class="text-2xl font-bold text-amber-600">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16 md:h-20">
+            <div class="text-lg md:text-2xl font-bold text-amber-600">
                 GOD-CLEANER・GOLD
             </div>
             <div class="hidden md:flex space-x-6">
@@ -46,7 +86,7 @@
                 <a href="#voice" class="text-gray-600 hover:text-amber-600 transition-colors">導入事例</a>
                 <a href="#offer" class="text-gray-600 hover:text-amber-600 transition-colors">導入特典</a>
             </div>
-            <a href="#contact" class="bg-amber-600 text-white px-5 py-2.5 rounded-md font-semibold hover:bg-amber-700 transition-colors shadow-lg">
+            <a href="#contact" class="bg-amber-600 text-white px-3 py-2 md:px-5 md:py-2.5 rounded-md text-sm md:text-base font-semibold hover:bg-amber-700 transition-colors shadow-lg">
                 無料資料請求
             </a>
         </nav>
@@ -55,30 +95,26 @@
     <main>
         <section id="hero" class="bg-white pb-20 pt-10">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- 大きな画像スペースを確保 -->
                 <div class="w-full h-auto mb-8 relative rounded-lg overflow-hidden shadow-2xl">
-                    <!-- メインビジュアル画像 -->
                    <a href="https://imgtu.com/ja/upload/jrgw1tfm/gc-g" target="_blank"><img src="https://imgtu.com/uploads/jrgw1tfm/r-gc-g.webp" alt="GC-G.jpg" border="0"/></a>
 
-<!-- ヒーローテキストを画像上に重ねるための要素 -->
 <div class="absolute inset-0 flex flex-col justify-center items-center text-center p-4 bg-black bg-opacity-30 text-white">
-    <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">
+    <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-3 md:mb-4 px-2">
         「集客の悩み」を<br>
         「感動とリピート」に変える。
     </h1>
-    <h2 class="text-2xl md:text-4xl font-semibold mb-6">
+    <h2 class="text-xl sm:text-2xl md:text-4xl font-semibold mb-4 md:mb-6 px-2">
         次世代のデトックスマシン <span class="text-amber-400">GOD-CLEANER・GOLD</span>
     </h2>
 </div>
                 </div>
                 
-                <!-- 画像の下にCTAとサブコピーを配置 -->
                 <div class="text-center">
-                    <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-700">
+                    <p class="text-base md:text-lg lg:text-xl max-w-3xl mx-auto mb-6 md:mb-8 text-gray-700 px-4">
                         体験者の驚きが口コミを呼び、高単価・高リピート率を実現。
                         今、既存メニューとの組み合わせで売上が最大化する。
                     </p>
-                    <a href="#contact" class="bg-amber-600 text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-amber-700 transition-colors shadow-xl">
+                    <a href="#contact" class="inline-block bg-amber-600 text-white px-6 py-3 md:px-10 md:py-4 rounded-md font-bold text-base md:text-lg hover:bg-amber-700 transition-colors shadow-xl">
                         無料資料請求・専門スタッフによる説明を希望する
                     </a>
                 </div>
@@ -338,7 +374,7 @@
                     
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <label for="zip" class="block text-sm font-semibold text-gray-700">郵便番号 <span class="text-red-500">必須</span></d>
+                            <label for="zip" class="block text-sm font-semibold text-gray-700">郵便番号 <span class="text-red-500">必須</span></label>
                             <input type="text" id="zip" name="zip" placeholder="例) 123-4567" required class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
                         </div>
                          <div>
