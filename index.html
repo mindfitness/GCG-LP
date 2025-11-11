@@ -101,10 +101,10 @@
 <div class="absolute inset-0 flex flex-col justify-center items-center text-center p-4 bg-black bg-opacity-30 text-white">
     <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight mb-3 md:mb-4 px-2">
         「集客の悩み」を<br>
-        「感動とリピート」に変える。
+        「感動とリピート」に。
     </h1>
     <h2 class="text-xl sm:text-2xl md:text-4xl font-semibold mb-4 md:mb-6 px-2">
-        次世代のデトックスマシン <span class="text-amber-400">GOD-CLEANER・GOLD</span>
+        次世代のデトックスマシン<br><span class="text-amber-400">GOD-CLEANER・GOLD</span>
     </h2>
 </div>
                 </div>
@@ -179,7 +179,7 @@
                     その圧倒的な「結果の可視化」が、お客様の感動を呼び、サロン経営の強力な武器となります。
                 </p>
                 <div class="w-full max-w-3xl mx-auto mb-16 placeholder-bg h-96">
-                    <span><a href="https://imgtu.com/ja/upload/js5slt7z/3_page-0001" target="_blank"><img src="https://imgtu.com/uploads/js5slt7z/r-3_page-0001.webp" alt="3_page-0001.jpg" border="0"/></a></span>
+                    <span><img src="https://imgtu.com/uploads/js5slt7z/r-3_page-0001.webp" alt="3_page-0001.jpg" border="0"/></span>
                 </div>
                 
                 <h3 class="text-2xl md:text-3xl font-bold text-center mb-12">サロンに選ばれる「３つの導入メリット」</h3>
@@ -276,7 +276,152 @@
             </div>
         </section>
 
-  
+        <section id="contact" class="py-20 bg-orange-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">
+                    まずは「GOD-CLEANER・GOLD」の<br class="md:hidden">
+                    <span class="text-amber-600">全てをご確認ください</span>
+                </h2>
+                <p class="text-center text-lg text-gray-700 max-w-3xl mx-auto mb-12">
+                    資料請求、詳細説明のご希望は、以下のフォームより承ります。<br>
+                    専任の担当者が、あなたのサロンのお悩みに合わせて丁寧にご説明いたします。
+                </p>
+
+                <div id="form-success" class="hidden max-w-3xl mx-auto bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg text-center mb-8">
+                    <strong class="font-bold">お問い合わせありがとうございます！</strong>
+                    <span class="block sm:inline">送信が完了しました。担当者より折り返しご連絡いたします。</span>
+                </div>
+                
+                <div id="form-error" class="hidden max-w-3xl mx-auto bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg text-center mb-8">
+                    <strong class="font-bold">送信エラー</strong>
+                    <span class="block sm:inline" id="error-message">お問い合わせの送信中に問題が発生しました。再度お試しください。</span>
+                </div>
+
+                <form id="contact-form" class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl space-y-6">
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">形態 <span class="text-red-500">必須</span></label>
+                        <div class="flex flex-wrap gap-x-6 gap-y-2">
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="businessType" value="salon" class="form-radio text-amber-600" required>
+                                <span class="ml-2">サロン・治療院</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="businessType" value="personal" class="form-radio text-amber-600">
+                                <span class="ml-2">個人</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="businessType" value="other" class="form-radio text-amber-600">
+                                <span class="ml-2">その他</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div id="salon-status" class="hidden pl-4 border-l-4 border-gray-200">
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">現在の状況 <span class="text-red-500">必須</span></label>
+                        <div class="flex flex-wrap gap-x-6 gap-y-2">
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="salonStatus" value="open" class="form-radio text-amber-600">
+                                <span class="ml-2">現在営業中</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="salonStatus" value="soon" class="form-radio text-amber-600">
+                                <span class="ml-2">近々オープン予定</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">お問い合わせ項目 <span class="text-red-500">必須</span></label>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" name="inquiry[]" value="doc" class="form-checkbox text-amber-600 rounded">
+                                <span class="ml-2">詳細の資料希望</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="inquiry[]" value="exp" class="form-checkbox text-amber-600 rounded">
+                                <span class="ml-2">体験できるお店希望</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="inquiry[]" value="staff" class="form-checkbox text-amber-600 rounded">
+                                <span class="ml-2">専任担当者の説明を希望</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" name="inquiry[]" value="buy" class="form-checkbox text-amber-600 rounded">
+                                <span class="ml-2">体験してよければ購入を希望</span>
+                            </label>
+                             <label class="flex items-center">
+                                <input type="checkbox" name="inquiry[]" value="buy_done" class="form-checkbox text-amber-600 rounded">
+                                <span class="ml-2">体験済みで購入を希望</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="company" class="block text-sm font-semibold text-gray-700">御社名 (屋号) <span class="text-red-500">必須</span></label>
+                            <input type="text" id="company" name="company" required class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-700">お名前 <span class="text-red-500">必須</span></label>
+                            <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                        </div>
+                    </div>
+                     <div>
+                        <label for="furigana" class="block text-sm font-semibold text-gray-700">ふりがな <span class="text-red-500">必須</span></label>
+                        <input type="text" id="furigana" name="furigana" required class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="zip" class="block text-sm font-semibold text-gray-700">郵便番号 <span class="text-red-500">必須</span></label>
+                            <input type="text" id="zip" name="zip" placeholder="例) 123-4567" required class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                        </div>
+                         <div>
+                            <label for="prefecture" class="block text-sm font-semibold text-gray-700">都道府県 <span class="text-red-500">必須</span></label>
+                            <input type="text" id="prefecture" name="prefecture" required class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="city" class="block text-sm font-semibold text-gray-700">市区町村 <span class="text-red-500">必須</span></label>
+                        <input type="text" id="city" name="city" required class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+                    
+                     <div>
+                        <label for="address" class="block text-sm font-semibold text-gray-700">それ以降の住所 <span class="text-red-500">必須</span></label>
+                        <input type="text" id="address" name="address" required class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-gray-700">電話番号 <span class="text-red-500">必須</span></label>
+                            <input type="tel" id="phone" name="phone" required class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700">メールアドレス <span class="text-red-500">必須</span></label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-gray-700">メッセージ本文 (任意)</label>
+                        <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-amber-500 focus:border-amber-500"></textarea>
+                    </div>
+                    
+                    <div class="text-center">
+                         <p class="text-xs text-gray-500 mb-4">
+                            <a href="#" class="underline hover:text-amber-600">プライバシーポリシー</a>をご確認の上、送信してください。
+                        </p>
+                        <button type="submit" id="submit-button" class="w-full max-w-md mx-auto bg-amber-600 text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-amber-700 transition-colors shadow-xl">
+                            上記の内容で送信する
+                        </button>
+                         <p id="loading-message" class="hidden text-amber-600 mt-4 font-semibold">送信中です...</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer class="py-10 bg-gray-800 text-gray-400">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -429,7 +574,14 @@
                 }
             });
 
-  
+            const contactForm = document.getElementById('contact-form');
+            const formSuccess = document.getElementById('form-success');
+            const formError = document.getElementById('form-error');
+            const submitButton = document.getElementById('submit-button');
+            const loadingMessage = document.getElementById('loading-message');
+            const errorMessageDiv = document.getElementById('error-message');
+
+
             contactForm.addEventListener('submit', async (e) => {
                 e.preventDefault();
                 
